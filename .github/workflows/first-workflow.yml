@@ -11,3 +11,5 @@ jobs:
               run: |
                 node -v
                 npm -v
+            - name: log string from JS code
+              run: node hello.js  
