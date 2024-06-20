@@ -13,6 +13,7 @@ jobs:
                 echo $GITHUB_SHA
                 echo $GITHUB_REPOSITORY
                 echo $GITHUB_WORKSPACE
+                echo "Hello World"
     display-ws-info-windows:
         runs-on: ubunti-latest
         steps:
