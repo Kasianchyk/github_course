@@ -4,7 +4,7 @@ on:
 
 jobs:
     display-ws-info-ubuntu:
-        runs-on: ubunti-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Display Working Directory and List Files
               run: |
@@ -13,9 +13,8 @@ jobs:
                 echo $GITHUB_SHA
                 echo $GITHUB_REPOSITORY
                 echo $GITHUB_WORKSPACE
-                echo "Hello World"
     display-ws-info-windows:
-        runs-on: ubunti-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Display Working Directory and List Files
               run: |
