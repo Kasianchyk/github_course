@@ -11,5 +11,20 @@ jobs:
               run: |
                 node -v
                 npm -v
-            - name: log string from JS code
-              run: node hello.js  
+            #- name: log string from JS code
+            #  run: node hello.js  
+    parallel-job-macos:
+        runs-on: macos-latest
+        steps:
+            - name: View SW Version
+              run: sw_vers
+    depended-job:
+        runs-on: windows-latest
+        needs: run-shell-commands
+        steps:
+             - name: echo a string
+               run: Write-Output "Windows String"
+             - name: Error Step
+               run: something 
+
+
