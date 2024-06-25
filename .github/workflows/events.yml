@@ -1,6 +1,18 @@
 name: Repository Events
 on:
     push:
+        branches:
+            - main
+            - "feature/*"  #workflow syntax
+            - "!feature/fitA"
+        #branches-ignore:
+        #    - develop    
+        tags:
+            - v1.*
+            - "!v1.1"
+        paths:  
+            - "**.js"
+            - "!app.js"
     pull_request:
         types: [opened, reopened]
     issues:
