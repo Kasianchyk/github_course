@@ -13,7 +13,7 @@ jobs:
               run: echo 'Runs only on Failure'
             - name: Runs on Success
               if: success()
-              run: 'Runs only on Success'
+              run: echo 'Runs only on Success'
             - name: Always runs
               if: always()
               run: echo 'Always runs'
