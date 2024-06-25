@@ -1,6 +1,6 @@
 name: Expression and Context
 on: [push]
-
+run-name: "Expression & Context @${{github.actor}}, event: ${{github.event_name}}"
 jobs:
     using-expression-and-context:
         runs-on: ubuntu-latest
